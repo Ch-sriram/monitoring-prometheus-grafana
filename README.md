@@ -78,3 +78,20 @@ With these valuable metrics, we are then able to add further benefit to the over
 ![monitoring-stages-devops](./img/devops-monitoring-stages.png)
 
 </details>
+
+<details>
+<summary>
+
+### Prometheus Architecture 🔥📝
+
+- Prometheus is a monitoring solution with a time-series database that can be queried using [`Prom-QL`](https://prometheus.io/docs/prometheus/latest/querying/basics/).
+- It's a Single Static Binary built in Golang.
+- It can pull metrics from many different sources such as &mdash; network, devices, hosts, services, and applications.
+- Application instrumentation with many different languages such as `golang`, `python`, `javascript`, `java`, `ruby`, etc.
+- A single prometheus server can handle millions of metric ingestions per second.
+- Many work-arounds for a [pull-based service](https://www.alibabacloud.com/blog/pull-or-push-how-to-select-monitoring-systems_599007), as it's widely used and supported by the DevOps community.
+
+![prometheus-architecture](https://prometheus.io/assets/architecture.png)
+
+</summary>
+</details>
