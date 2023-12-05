@@ -34,5 +34,23 @@ Welcome to the [Monitoring &mdash; Prometheus & Grafana](#monitoring--prometheus
    4. You can now access your entire server vm via VSCode, and your explorer in VSCode should resemble the following:
 
       ![vscode-explorer-first-time-connect-ssh](./img/vscode-explorer-first-time-connect-ssh.png)
+8. Download `docker` from <get.docker.com> as follows:
+
+   ```sh
+   # Download Docker Script
+   sudo curl -fsSL https://get.docker.com -o install-docker.sh
+
+   # Do a dry-run (optional)
+   sudo sh install-docker.sh --dry-run
+
+   # Install Docker
+   sudo sh install-docker.sh
+
+   # Add the current user to 'docker' group
+   sudo usermod -aG docker ${USER}
+
+   # Use docker and check running containers
+   docker ps # this command won't work unless the user is `sudo`
+   ```
 
 </details>
