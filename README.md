@@ -84,6 +84,8 @@ With these valuable metrics, we are then able to add further benefit to the over
 
 ### Prometheus Architecture 🔥📝
 
+</summary>
+
 - Prometheus is a monitoring solution with a time-series database that can be queried using [`Prom-QL`](https://prometheus.io/docs/prometheus/latest/querying/basics/).
 - It's a Single Static Binary built in Golang.
 - It can pull metrics from many different sources such as &mdash; network, devices, hosts, services, and applications.
@@ -93,5 +95,4 @@ With these valuable metrics, we are then able to add further benefit to the over
 
 ![prometheus-architecture](https://prometheus.io/assets/architecture.png)
 
-</summary>
 </details>
