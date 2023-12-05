@@ -58,6 +58,13 @@ Welcome to the [Monitoring &mdash; Prometheus & Grafana](#monitoring--prometheus
 <details>
 <summary>
 
+## Monitoring Principles & How Prometheus Works
+
+</summary>
+
+<details>
+<summary>
+
 ### DevOps LifeCycle ♻️
 
 </summary>
@@ -95,4 +102,5 @@ With these valuable metrics, we are then able to add further benefit to the over
 
 ![prometheus-architecture](https://prometheus.io/assets/architecture.png)
 
+</details>
 </details>
