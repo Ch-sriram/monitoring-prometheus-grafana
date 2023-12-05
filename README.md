@@ -54,3 +54,27 @@ Welcome to the [Monitoring &mdash; Prometheus & Grafana](#monitoring--prometheus
    ```
 
 </details>
+
+<details>
+<summary>
+
+### DevOps LifeCycle ♻️
+
+</summary>
+
+![devops-lifecycle](https://cacoo.com/wp-app/uploads/2021/06/continuous-development-visual.png)
+
+- `Plan` & `Code` together is known as `Continuos Development`,
+- `Build` & `Test` together is known as `Continuos Integration` &mdash; sometimes also called _Heart of DevOps_,
+- `Release` & `Deploy` together is known as `Continuous Deployment`, and
+- `Operate` & `Monitor` together is known as `Continuos Monitoring`.
+
+`Continuos Monitoring` is considered the most crucial stage in the DevOps LifeCycle as in this stage we can check if the system is running in accordance to the standards that are expected by the end-users, and here's where we can check the health of the system and application performance.
+
+With these valuable metrics, we are then able to add further benefit to the overall performance to our environment such as reducing support costs, improving productivity, and increasing system reliability, and from the analytics and reporting generated from the `monitoring` stage, we can have a clear vision for further planning of development of the application and system.
+
+`Monitoring` has the following 5 stages:
+
+![monitoring-stages-devops](./img/devops-monitoring-stages.png)
+
+</details>
