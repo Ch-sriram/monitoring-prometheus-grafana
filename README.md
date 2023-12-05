@@ -31,6 +31,6 @@ Welcome to the [Monitoring &mdash; Prometheus & Grafana](#monitoring--prometheus
       ```
 
    3. Choose a configuration file for configuring SSH keys and then the `Remote-SSH` extension will prompt for password, once you type it in, a dialog to `Confirm` will be asked where you've to click `Confirm` to connect to the vm via VSCode.
-   4. You can now access your entire server vm via VSCode.
+   4. You can now access your entire server vm via VSCode, and your explorer in VSCode should resemble the following: ![vscode-explorer-first-time-connect-ssh](./img/vscode-explorer-first-time-connect-ssh.png)
 
 </details>
