@@ -10,7 +10,6 @@ Welcome to the [Monitoring &mdash; Prometheus & Grafana](#monitoring--prometheus
 ## Setup & Installation 🔧💻
 
 </summary>
-<br/>
 
 1. Download [VirtualBox](https://www.oracle.com/in/virtualization/technologies/vm/downloads/virtualbox-downloads.html) (or follow instructions to [install virtual box in ubuntu](https://tecadmin.net/install-virtualbox-on-ubuntu-20-04/))
 2. Download [Ubuntu Server Image `18.04`](https://releases.ubuntu.com/18.04/).
@@ -31,6 +30,6 @@ Welcome to the [Monitoring &mdash; Prometheus & Grafana](#monitoring--prometheus
       ssh <username>@<ubuntu-server-ip> # make sure the ubuntu server vm is started in headless mode
       ```
 
-   3. The extension will prompt for password, once you type it in, a dialog to `Confirm` will be asked where you've to click `Confirm` to connect to the vm via VSCode.
+   3. Choose a configuration file for configuring SSH keys and then the `Remote-SSH` extension will prompt for password, once you type it in, a dialog to `Confirm` will be asked where you've to click `Confirm` to connect to the vm via VSCode.
 
 </details>
