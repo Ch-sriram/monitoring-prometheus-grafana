@@ -104,3 +104,73 @@ With these valuable metrics, we are then able to add further benefit to the over
 
 </details>
 </details>
+
+<details>
+<summary>
+
+## Install & Setting Up Prometheus Server 🔥🖱️🔧
+
+</summary>
+
+<details>
+<summary>
+
+### Running Prometheus in Terminal 🧑‍🚒🖥️🖱️
+
+</summary>
+
+> Before doing anything, please [take a snapshot of the Ubuntu Server VM in VirtualBox](https://www.baeldung.com/linux/virtualbox-snapshots) to make sure that the current state is preserved.
+
+1. Open <https://prometheus.io/download/> and `Copy link address` for **LTS** version.
+2. Start the ubuntu-server vm in headless mode and connect via VSCode (mentioned in detail in `Setup & Installation`'s Step-7).
+3. Download the `prometheus` package via `wget` as follows:
+
+   ```sh
+   wget https://github.com/prometheus/prometheus/releases/download/v2.45.1/prometheus-2.45.1.linux-amd64.tar.gz
+   ```
+
+4. Untar the downloaded tarbal:
+
+   ```sh
+   gunzip prometheus-2.45.1.linux-amd64.tar.gz && tar xvf ./prometheus-2.45.1.linux-amd64.tar
+   ```
+
+5. Run `prometheus`:
+
+   ```sh
+   cd prometheus-2.45.1.linux-amd64 && ./prometheus
+   ```
+
+6. You should be able to access `prometheus` server from `<ip-addr>:9090` in your browser. If the `ip-addr` is `192.168.29.79`, then you can access the `prometheus` server dashboard from the browser by going to `192.168.29.79:9090`. By default, `:9090` is used as the port for `prometheus` server job, but this can be changed via `192.168.29.79:9090/config` or `prometheus.yml` file.
+
+   ![prometheus-dashboard](./img/prometheus-dashboard.png)
+
+7. We can issue a command to `prometheus` via the `Expression` box, and the command we'll give is: `up`, which by default scrapes the `prometheus` job, and gives an output that resembles the following:
+
+   ![prmetheus-expression-up](./img/prometheus-expression-up.png)
+
+   `value` of `1` means that the scrape was successful.
+
+8. We can find more useful details in the following sections:
+   1. `Status` > `Runtime & Build Information` \[or\] go to `<ip-addr>:9090/status`
+
+      ![status-runtime-build-info](./img/status-runtime-build-info.png)
+
+   2. `Status` > `Command-Line Flags` \[or\] go to `<ip-addr>:9090/flags`
+
+      ![command-line-flags-prometheus](./img/command-line-flags-prometheus.png)
+
+   3. `Status` > `Configuration` \[or\] go to `<ip-addr>:9090/config`
+
+      ![config-prometheus](./img/config-prometheus.png)
+
+      The configuration can be copied and shared with anyone, and then anyone else using `prometheus` will be able to scrape the same targets as we're scraping.
+
+   4. `Status` > `Targets` \[or\] go to `<ip-addr>:9090/targets`
+
+      ![prometheus-targets](./img/prometheus-targets.png)
+
+      By default, the scraped targets the `prometheus` job itself, so the data shown in the image above is for `prometheus` job.
+
+</details>
+</details>
